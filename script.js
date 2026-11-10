@@ -1,4 +1,4 @@
-const API_KEY = window.NEWS_API_KEY;
+const API_KEY = "pub_88cf27ca64b644d6a7001fc8ca8a3730";
 const API_URL = "https://newsdata.io/api/1/latest";
 const newsList = document.getElementById("newsList");
 const message = document.getElementById("msg");
@@ -18,11 +18,6 @@ function createNewsUrl(params) {
 }
 
 async function getNews(params) {
-    if (!API_KEY) {
-        message.textContent = "Configure your NewsData.io API key in config.js to load news.";
-        return;
-    }
-
     if (currentRequest) {
         currentRequest.abort();
     }

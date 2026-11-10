@@ -16,13 +16,7 @@ Daily Hunt is a small, responsive news page that lets you browse current headlin
 2. Open `index.html` in a web browser.
 3. Select a category or enter a search term.
 
-The page fetches news from NewsData.io, so an internet connection and a valid API key are required. Create a local `config.js` file containing:
-
-```js
-window.NEWS_API_KEY = "your-newsdata-api-key";
-```
-
-The local config file is ignored by Git. `config.example.js` is provided as a template. Never commit a private API key to a public repository; for production, make API requests through a server that keeps the key private.
+The page fetches news from NewsData.io, so an internet connection and a valid API key are required. The API key is configured in `script.js`. To use your own key, replace the `API_KEY` value there.
 
 ## Project files
 
