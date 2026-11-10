@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1 id="heading">Daily Hunt</h1>
+    </header>
+
+    <div class="logo">
+        <h2>News</h2>
+        <nav id="categories" aria-label="News categories">
+            <button type="button" data-category="top" class="active" aria-pressed="true">Home</button>
+            <button type="button" data-category="technology" aria-pressed="false">Technology</button>
+            <button type="button" data-category="sports" aria-pressed="false">Sports</button>
+            <button type="button" data-category="business" aria-pressed="false">Business</button>
+        </nav>
+    </div>
+
+    <section id="search" aria-labelledby="latestHeading">
+        <h2 id="latestHeading">Latest News</h2>
+        <form id="searchForm">
+            <label class="visually-hidden" for="searchInput">Search news</label>
+            <input type="search" id="searchInput" placeholder="Enter your interest to search">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <p id="msg" role="status" aria-live="polite"></p>
+
+    <main id="newsList" aria-label="News articles"></main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
